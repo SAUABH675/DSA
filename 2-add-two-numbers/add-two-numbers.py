@@ -8,9 +8,9 @@ class Solution(object):
         """
         :type l1: Optional[ListNode]
         :type l2: Optional[ListNode]
-        :rtype: Optional[ListNode]
+        :type: Optional[ListNode]
         """
-        dummy=ListNode(0)
+        dummy=ListNode(0) # noqa: F821
         curr=dummy
         carry=0
         while l1 or l2 or carry:
@@ -18,7 +18,7 @@ class Solution(object):
             y=l2.val if l2 else 0
             total =x+y +carry
             carry=total//10
-            curr.next=ListNode(total%10)
+            curr.next=ListNode(total%10)  # noqa: F821
             curr=curr.next
             if l1:
                 l1=l1.next
