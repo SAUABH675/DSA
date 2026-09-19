@@ -45,6 +45,4 @@ jobs:
       - name: Test with pytest
         shell: bash -el {0}
         run: |
-          pwd
-          ls -la
           python -m pytest -v
