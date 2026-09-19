@@ -6,6 +6,11 @@
 
 class Solution(object):
     def addTwoNumbers(self, l1, l2):
+        """
+        :type l1: Optional[ListNode]
+        :type l2: Optional[ListNode]
+        :rtype: Optional[ListNode]
+        """
         dummy = ListNode(0)
         curr = dummy
         carry = 0
@@ -22,6 +27,7 @@ class Solution(object):
 
             if l1:
                 l1 = l1.next
+
             if l2:
                 l2 = l2.next
 
