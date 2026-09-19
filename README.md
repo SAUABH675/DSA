@@ -27,6 +27,7 @@ This repository contains my solutions to LeetCode problems and other DSA practic
 ## 💻 Languages Used
 
 - Python
+- Java
 
 ## 📂 Repository Structure
 
