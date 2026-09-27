@@ -6,8 +6,7 @@ class Solution {
         int temp=x;
         int result=0;
         while(temp!=0){
-            int div=temp%10;
-            result=result*10+div;
+            result=result*10+temp%10;
             temp/=10;
         }
         return x == result || x == result / 10;
