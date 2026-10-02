@@ -49,29 +49,29 @@
 
 ## Solution
 
-```java
-// LeetCode Problem: Search Insert Position
-// Link: https://leetcode.com/problems/search-insert-position/
-// Difficulty: Easy
-// Language: java
+```python
+# LeetCode Problem: Search Insert Position
+# Link: https://leetcode.com/problems/search-insert-position/
+# Difficulty: Easy
+# Language: python
 
-class Solution {
-    public int searchInsert(int[] nums, int target) {
-        int low=0;
-        int high=nums.length-1;
-        while(low<=high){
-            int mid=(low+high)/2;
-            if(nums[mid]==target){
-                return mid;
-            }else if(target>nums[mid]){
-                low=mid+1;
-            }else{
-                high=mid-1;
-            }
-        }
-        return low;
-    }
-}
+class Solution(object):
+    def searchInsert(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: int
+        """
+        left,right=0,len(nums)-1
+        while(left<=right):
+            mid=(left+right)//2
+            if(nums[mid]==target):
+                return mid
+            elif target>nums[mid]: 
+                left=mid+1
+            else:
+                right=mid-1
+        return left
 ```
 
 ---
