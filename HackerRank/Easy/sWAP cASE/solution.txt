@@ -1,0 +1,8 @@
+// HackerRank Problem: sWAP cASE
+// Link: https://www.hackerrank.com/challenges/swap-case/problem
+// Difficulty: Easy
+// Language: pypy3
+
+def swap_case(s):
+    return s.swapcase()
+
